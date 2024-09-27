@@ -138,9 +138,9 @@ if __name__ == '__main__':
     elif initialization == "orthogonal":
         cov_matrix = np.cov(dataFloat, rowvar=False)
         eigvals, eigvecs = np.linalg.eigh(cov_matrix)
-        sorted_indices = np.argsort(eigvals)[::-1]
-        principal_components = eigvecs[:, sorted_indices[:dimension]]
-        y = np.dot(dataFloat, principal_components)
+        sortedIndices = np.argsort(eigvals)[::-1]
+        principalComponents = eigvecs[:, sortedIndices[:dimension]]
+        y = np.dot(dataFloat, principalComponents)
     c = np.sum(1 / (originalD[originalD != 0]))
 
     E = []

@@ -1,4 +1,4 @@
-### Sammon Mapping
+# Sammon Mapping
 
 Sammon mapping is a nonlinear dimensionality reduction technique that preserves the structure of data by minimizing the difference between distances in high-dimensional space and their corresponding distances in a lower-dimensional projection.
 
